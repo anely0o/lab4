@@ -112,5 +112,6 @@ public class MyHashTable <K, V> {
                 current = current.next;
             }
         }
+        return null;
     }
 }
