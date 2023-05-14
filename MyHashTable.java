@@ -24,5 +24,10 @@ public class MyHashTable <K, V> {
         this.M = M;
         chainArray = new HashNode[M];
     }
-
+    private int hash(K key) {
+        return Math.abs(key.hashCode()) % M;
+    }
+    public void put(K key, V value) {
+        int index = hash(key);
+    }
 }
