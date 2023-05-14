@@ -47,9 +47,11 @@ public class MyHashTable <K, V> {
                     return;
                 }
                 current = current.next;
-                }
+            }
+            if (current.key.equals(key)) {
+                current.value = value;
             }
 
         }
     }
-
+}
