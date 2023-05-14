@@ -13,6 +13,6 @@ public class MyHashTable <K, V> {
     }
     public void put(K key, V value) {
         int index = getIndex(key);
-        
+        List<Entry<K, V>> bucket = buckets.get(index);
     }
 }
