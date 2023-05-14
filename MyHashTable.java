@@ -46,8 +46,10 @@ public class MyHashTable <K, V> {
                     current.value = value;
                     return;
                 }
+                current = current.next;
+                }
             }
 
         }
     }
-}
+
