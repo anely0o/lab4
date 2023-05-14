@@ -65,4 +65,6 @@ public class MyHashTable <K, V> {
             if (current.key.equals(key)) {
                 return current.value;
             }
+            current = current.next;
+            
 }
