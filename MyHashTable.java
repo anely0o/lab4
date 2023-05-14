@@ -77,6 +77,15 @@ public class MyHashTable <K, V> {
             if (current.key.equals(key)) {
                 if (prev == null) {
                     chainArray[index] = current.next;
+                } else {
+                    prev.next = current.next;
+                }
+                size--;
+                return current.value;
+            }
+            prev = current;
+            current = current.next;
         }
+        return null;
     }
 }
