@@ -1,5 +1,5 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.LinkedList;
+import java.util.Objects;
 public class MyHashTable <K, V> {
     private class HashNode<K, V> {
         private K key;
@@ -9,6 +9,10 @@ public class MyHashTable <K, V> {
             this.key = key;
             this.value = value;
         }
-        
+        @Override
+        public String toString() {
+            return "{" + key + " " + value + "}";
+        }
     }
-}
+
+    }
