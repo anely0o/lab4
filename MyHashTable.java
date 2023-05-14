@@ -100,4 +100,16 @@ public class MyHashTable <K, V> {
                 current = current.next;
             }
         }
-        return false
+        return false;
+    }
+    public K getKey(V value) {
+        for (int i = 0; i < M; i++) {
+            HashNode<K, V> current = chainArray[i];
+            while (current != null) {
+                if (Objects.equals(current.value, value)) {
+                    return current.key;
+                }
+            }
+        }
+    }
+}
