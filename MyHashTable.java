@@ -66,5 +66,6 @@ public class MyHashTable <K, V> {
                 return current.value;
             }
             current = current.next;
-            
+        }
+        return null;
 }
