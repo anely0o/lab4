@@ -5,6 +5,7 @@ public class MyHashTable <K, V> {
     private List<List<Entry<K, V>>> buckets;
     private int size;
     public MyHashTable() {
-        
+        buckets = new ArrayList<>(default_capacity);
+        for (int i = 0; i < default_capacity; i++)
     }
 }
