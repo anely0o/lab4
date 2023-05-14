@@ -68,4 +68,6 @@ public class MyHashTable <K, V> {
             current = current.next;
         }
         return null;
+    }
+    public V remove(K key) {
 }
