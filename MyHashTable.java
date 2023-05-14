@@ -50,6 +50,8 @@ public class MyHashTable <K, V> {
             }
             if (current.key.equals(key)) {
                 current.value = value;
+            } else {
+                current.next = node;
             }
 
         }
