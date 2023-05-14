@@ -109,6 +109,7 @@ public class MyHashTable <K, V> {
                 if (Objects.equals(current.value, value)) {
                     return current.key;
                 }
+                current = current.next;
             }
         }
     }
