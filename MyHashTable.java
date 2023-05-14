@@ -9,5 +9,6 @@ public class MyHashTable <K, V> {
         for (int i = 0; i < default_capacity; i++) {
             buckets.add(new ArrayList<>());
         }
+        size = 0;
     }
 }
