@@ -70,4 +70,7 @@ public class MyHashTable <K, V> {
         return null;
     }
     public V remove(K key) {
+        int index = hash(key);
+        HashNode<K, V> current = chainArray[index];
+    }
 }
