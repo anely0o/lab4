@@ -6,6 +6,8 @@ public class MyHashTable <K, V> {
     private int size;
     public MyHashTable() {
         buckets = new ArrayList<>(default_capacity);
-        for (int i = 0; i < default_capacity; i++)
+        for (int i = 0; i < default_capacity; i++) {
+            buckets.add(new ArrayList<>());
+        }
     }
 }
