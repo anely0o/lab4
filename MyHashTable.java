@@ -55,7 +55,7 @@ public class MyHashTable <K, V> {
             }
 
         }
-        size ++;
+        size++;
     }
 
     public V get(K key) {
@@ -69,6 +69,7 @@ public class MyHashTable <K, V> {
         }
         return null;
     }
+
     public V remove(K key) {
         int index = hash(key);
         HashNode<K, V> current = chainArray[index];
@@ -88,10 +89,18 @@ public class MyHashTable <K, V> {
         }
         return null;
     }
+
     public boolean contains(V value) {
         for (int i = 0; i < M; i++) {
             HashNode<K, V> current = chainArray[i];
             while (current != null) {
                 if (Objects.equals(current.value, value)) {
                     return true;
+                }
+                current = current.next;
+            }
+        }
+        return null;
+    }
 }
+
