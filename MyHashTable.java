@@ -88,4 +88,10 @@ public class MyHashTable <K, V> {
         }
         return null;
     }
+    public boolean contains(V value) {
+        for (int i = 0; i < M; i++) {
+            HashNode<K, V> current = chainArray[i];
+            while (current != null) {
+                if (Objects.equals(current.value, value)) {
+                    return true;
 }
