@@ -123,5 +123,8 @@ public class MyHashTable <K, V> {
                 current = current.next;
             }
         }
+        for (int i = 0; i < M; i++) {
+            System.out.println("Bucket " + i + ": " + bucketSizes[i]);
+        }
     }
 }
