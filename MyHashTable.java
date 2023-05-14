@@ -29,5 +29,7 @@ public class MyHashTable <K, V> {
     }
     public void put(K key, V value) {
         int index = hash(key);
-    }
+        HashNode<K, V> node = new HashNode<>(key, value);
+        if (chainArray[index] == null)
+
 }
