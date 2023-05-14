@@ -55,5 +55,6 @@ public class MyHashTable <K, V> {
             }
 
         }
+        size ++;
     }
 }
