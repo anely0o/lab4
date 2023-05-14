@@ -74,7 +74,9 @@ public class MyHashTable <K, V> {
         HashNode<K, V> current = chainArray[index];
         HashNode<K, V> prev = null;
         while (current != null) {
-            
+            if (current.key.equals(key)) {
+                if (prev == null) {
+                    chainArray[index] = current.next;
         }
     }
 }
