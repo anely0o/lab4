@@ -17,6 +17,8 @@ public class MyHashTable <K, V> {
     private HashNode<K, V>[] chainArray;
     private int M = 11;
     private int size;
-
+    public MyHashTable() {
+        chainArray = new HashNode[M];
+    }
 
 }
