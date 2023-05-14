@@ -12,4 +12,7 @@ public class MyHashTable <K, V> {
         size = 0;
     }
     public void put(K key, V value) {
+        int index = getIndex(key);
+        
+    }
 }
